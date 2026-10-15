@@ -1,0 +1,21 @@
+{
+  "name": "redis-rate-limiter",
+  "version": "1.0.0",
+  "description": "Rate limiter middleware (Sliding Window Log + Token Bucket) for Node.js backed by Redis",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "node --test \"test/*.test.js\"",
+    "audit": "npm audit --omit=dev"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.3.0",
+    "helmet": "^8.3.0",
+    "ioredis": "^6.0.0"
+  }
+}
